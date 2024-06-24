@@ -1,0 +1,67 @@
+
+
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+
+import * as ButtonStories from './Button.stories.tsx';
+
+
+<Meta title="Ccomponents/Button" of={ButtonStories} />
+
+# Botões
+
+
+<Canvas of={ButtonStories.AllSizes} />
+
+Os componentes de botões são destinados para os que os usuários realizem ações específicas através de um clique. Com suporte para diferentes variantes e tamanhos, permitindo a inserção de textos, ícones ou ambos.
+
+
+### Aplicação com Texto
+
+```jsx
+<Button.Root>
+  <Button.Text text="Button" />
+</Button.Root>
+```
+
+<Canvas of={ButtonStories.Default} />
+
+### Aplicação com Texto e Ícone à Esquerda
+
+```jsx
+<Button.Root>
+  <Button.Icon name="FaAngleLeft" />
+  <Button.Text text="Button" />
+</Button.Root>
+```
+
+<Canvas of={ButtonStories.IconLeft} />
+
+### Aplicação com Texto e Ícone à Direita
+
+```jsx
+<Button.Root>
+  <Button.Text text="Button" />
+  <Button.Icon name="FaAngleLeft" />
+</Button.Root>
+```
+
+<Canvas of={ButtonStories.IconRight} />
+
+### Aplicação Somente com Ícone
+
+```jsx
+<Button.Root>
+  <Button.Icon name="FaUser" />
+</Button.Root>
+```
+<Canvas of={ButtonStories.OnlyIcon} />
+
+### Propriedades
+
+- Variants: **filled**, **outlined** e **borderless**;
+- Size: **sm**, **md** e **lg**;
+- Disabled: **true** e **false**;
+- Shape: **square** e **rounded**
+
+

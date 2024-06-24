@@ -1,0 +1,154 @@
+
+import { Meta, Typeset } from '@storybook/blocks';
+
+ <Meta title="Estilos/Tipografia" />
+
+export const typography = {
+  type: {
+    primary: '"Inter",  sans-serif',
+  },
+  weight: {
+      regular: '400',
+     medium: '500',
+     semibold: '600',
+     bold: '700',
+  },
+  size: {
+     "heading-2xl": 56,
+     "heading-xl": 48,
+     "heading-lg": 40,
+     "heading-md": 32,
+     "heading-sm": 28,
+     "heading-xs": 24,
+     "subtitle-base": 20,
+     "body-lg": 18,
+     "body-md": 16,
+     "body-sm": 14,
+     "body-xs": 10,
+     "body-2xs": 8,
+     "button-text-lg": 18,
+     "button-text-md": 16,
+     "button-text-sm": 14,
+     "caption-base": 12,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+
+ # Tipografia
+
+ ## Inter 
+
+ ### Heading
+ Weight: Bold-700
+ <Typeset
+   fontSizes={[
+     Number(typography.size["heading-2xl"]),
+     Number(typography.size["heading-xl"]),
+     Number(typography.size["heading-lg"]), 
+   ]}
+   fontWeight={typography.weight.bold}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+ Weight: Medium-500,
+ <Typeset
+   fontSizes={[
+     Number(typography.size["heading-md"]),
+     Number(typography.size["heading-sm"]),
+     Number(typography.size["heading-xs"]),
+ 
+   ]}
+   fontWeight={typography.weight.medium}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+
+ ### Subtitle
+
+ Weight: Regular-400
+ <Typeset
+   fontSizes={[
+     Number(typography.size["subtitle-base"]),
+   ]}
+   fontWeight={typography.weight.regular}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+
+ ### Body Regular
+
+ Weight: Regular-400
+ <Typeset
+   fontSizes={[
+     Number(typography.size["body-lg"]),
+     Number(typography.size["body-md"]),
+     Number(typography.size["body-sm"]),
+   ]}
+   fontWeight={typography.weight.regular}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+ ### Body Medium
+
+ Weight: Medium-500
+ <Typeset
+   fontSizes={[
+     Number(typography.size["body-md"]),
+     Number(typography.size["body-sm"]),
+     Number(typography.size["body-xs"]),
+     Number(typography.size["body-2xs"]),
+   ]}
+   fontWeight={typography.weight.medium}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+ ### Body Semi Bold
+
+ Weight: Semi bold-600
+ <Typeset
+   fontSizes={[
+     Number(typography.size["body-sm"]),
+   ]}
+   fontWeight={typography.weight.semibold}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+ ### Body Bold
+
+ Weight: Bold-700
+ <Typeset
+   fontSizes={[
+     Number(typography.size["body-md"]),
+   ]}
+   fontWeight={typography.weight.bold}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+
+ ### Button
+
+ Weight: Bold-700
+ <Typeset
+   fontSizes={[
+     Number(typography.size["button-text-lg"]),
+     Number(typography.size["button-text-md"]),
+     Number(typography.size["button-text-sm"]),
+   ]}
+   fontWeight={typography.weight.bold}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ />
+
+ ### Caption
+
+ Weight: Regular-400
+ <Typeset
+   fontSizes={[
+     Number(typography.size["caption-base"]),
+
+   ]}
+   fontWeight={typography.weight.bold}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+ /> 
