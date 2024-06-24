@@ -1,6 +1,6 @@
 {
   "name": "jsm-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Biblioteca de componentes de UI da JSMX, utilizando Tailwind CSS e Storybook.",
   "private": false,
   "dependencies": {
